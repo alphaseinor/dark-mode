@@ -7,10 +7,8 @@ export const useDarkMode = () => {
   useEffect(() => {
     if(darkMode === true){
       document.body.classList.add("dark-mode")
-      console.log("darkmode")
     }else{
       document.body.classList.remove("dark-mode")
-      console.log("not darkmode")
     }
   }, [darkMode])
 
