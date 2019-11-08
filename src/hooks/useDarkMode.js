@@ -5,11 +5,12 @@ export const useDarkMode = () => {
   const [darkMode, setDarkMode] = useLocalStorage('false')
 
   useEffect(() => {
-    //const body = document.getElementById("body")
     if(darkMode === 'true'){
-      document.body.classList.add = "dark-mode"
+      document.body.classList.add("dark-mode")
+      console.log("darkmode")
     }else{
       document.body.classList.remove("dark-mode")
+      console.log("not darkmode")
     }
   }, [darkMode])
 
