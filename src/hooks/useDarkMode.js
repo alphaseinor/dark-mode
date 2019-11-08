@@ -12,7 +12,7 @@ export const useDarkMode = () => {
       body.className = ""
     }
     
-    return [darkmode, setDarkMode]
+    return [darkMode, setDarkMode]
   })
 
 }
