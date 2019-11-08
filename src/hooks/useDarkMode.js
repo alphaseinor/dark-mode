@@ -11,6 +11,7 @@ export const useDarkMode = () => {
     }else{
       body.className = ""
     }
+    
     return [darkmode, setDarkMode]
   })
 
